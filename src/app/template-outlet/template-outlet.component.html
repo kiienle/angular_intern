@@ -1,0 +1,13 @@
+<div class="flex items-center justify-between">
+  <div>
+    You have selected
+    <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>
+    <button></button>
+
+  </div>
+</div>
+
+<ng-template #counterTmpl>
+  <span class="rounded-lg border borer-gray-200">{{ count }}</span>
+</ng-template>
+

@@ -16,6 +16,7 @@ import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { ChildFormComponent } from './child-form/child-form.component';
 import { EventEmitComponent } from './event-emit/event-emit.component';
+import { TemplateOutletComponent } from './template-outlet/template-outlet.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { EventEmitComponent } from './event-emit/event-emit.component';
     ToggleComponent,
     ChildFormComponent,
     EventEmitComponent,
+    TemplateOutletComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

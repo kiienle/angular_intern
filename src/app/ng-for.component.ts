@@ -17,13 +17,18 @@ import { Component, OnInit, ViewChild } from '@angular/core';
       Click Me!! by Ref
     </button>
     <button (click)="clickInside()">Click Me!! by Ref Inside</button>
-    <app-toggle #toggleComp [(checked)]="checked"></app-toggle>
+    <app-toggle #toggleComp [(checked)]="checked">
+      <div class="text-blue-300">count ++</div>
+      <div class="first-ele">First Element</div>
+      <label>Label Content</label>
+    </app-toggle>
     <app-event-emit
       #eventEmitComp
       (clickChildBtn)="onClickChildBtn($event)"
       (clickChildDiv)="onClickChildDiv($event)"
       (clickChangeColor)="onClickChangeColor()"
     ></app-event-emit>
+    <app-template-outlet></app-template-outlet>
   `,
 })
 export class NgForComponent implements OnInit {
